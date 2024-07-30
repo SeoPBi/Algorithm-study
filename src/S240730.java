@@ -5,12 +5,13 @@ public class S240730 {
     {
         Scanner sc = new Scanner(System.in);
 
-        double a = sc.nextDouble();
+        String a = sc.nextLine();
 
-        String b = Double.toString(a);
+        for(int i = 0; i < a.length(); i++)
+        {
+            System.out.println("'" + a.charAt(i) + "'");
+        }
 
-        String[] parts = b.split("\\.");
-
-        System.out.printf("%s\n%s", parts[0], parts[1]);
+        sc.close();
     }
 }
