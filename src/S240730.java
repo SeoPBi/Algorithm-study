@@ -5,12 +5,9 @@ public class S240730 {
     {
         Scanner sc = new Scanner(System.in);
 
-        String a = sc.nextLine();
+        int input = sc.nextInt();
 
-        for(int i = 0; i < a.length(); i++)
-        {
-            System.out.println("'" + a.charAt(i) + "'");
-        }
+        System.out.println(-input);
 
         sc.close();
     }
